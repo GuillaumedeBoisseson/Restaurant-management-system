@@ -1,0 +1,10 @@
+Nov 16, 2016 3:58:20 PM UseLogger LogStatus
+FINEST: Creating chessboard
+Nov 16, 2016 3:58:26 PM UseLogger LogStatus
+WARNING: Invalid move.
+Nov 16, 2016 3:58:26 PM UseLogger LogStatus
+INFO: White has moved.
+Nov 16, 2016 3:58:44 PM UseLogger LogStatus
+WARNING: Invalid move.
+Nov 16, 2016 3:58:44 PM UseLogger LogStatus
+INFO: Black has moved

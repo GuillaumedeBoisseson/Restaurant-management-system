@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button layoutX="26.0" layoutY="14.0" mnemonicParsing="false" onAction="#Menu" text="Back" />
+      <TableView fx:id="DataAnalysis" layoutX="5.0" layoutY="82.0" prefHeight="453.0" prefWidth="741.0">
+        <columns>
+            <TableColumn fx:id="Time" prefWidth="38.666656494140625" text="Time" />
+            <TableColumn fx:id="Date" prefWidth="45.0" text="Date" />
+          <TableColumn fx:id="DataTableNumber" prefWidth="33.0" text="TableNumber" />
+            <TableColumn fx:id="QuStarter1" prefWidth="60.333343505859375" text="Starter1" />
+            <TableColumn fx:id="QuStarter2" prefWidth="50.666656494140625" text="Starter2" />
+            <TableColumn fx:id="QuStarter3" prefWidth="50.33331298828125" text="Starter3" />
+            <TableColumn fx:id="QuMain1" prefWidth="39.33331298828125" text="Main1" />
+            <TableColumn fx:id="QuMain2" prefWidth="40.33331298828125" text="Main2" />
+            <TableColumn fx:id="QuMain3" prefWidth="42.3333740234375" text="Main3" />
+            <TableColumn fx:id="QuPudding1" prefWidth="58.66668701171875" text="Pudding1" />
+            <TableColumn fx:id="QuPudding2" prefWidth="60.66668701171875" text="Pudding2" />
+            <TableColumn fx:id="QuPudding3" prefWidth="62.66668701171875" text="Pudding3" />
+            <TableColumn fx:id="DataSpecialRequest" prefWidth="62.3333740234375" text="SpecialRequest" />
+            <TableColumn fx:id="DataEmployee" prefWidth="94.0" text="EmployeeName" />
+        </columns>
+      </TableView>
+      <Button layoutX="25.0" layoutY="541.0" mnemonicParsing="false" onAction="#loaddDatabaseOrdersCook" text="Load Data" />
+      <TextField fx:id="searchBox" layoutX="109.0" layoutY="541.0" onInputMethodTextChanged="#searchUser" onKeyReleased="#searchUser" prefHeight="25.0" prefWidth="89.0" promptText="Search" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+package application;
+
+//this code was found on a tutorial, retrieved on the 07/12/2016, available at: https://www.youtube.com/watch?v=nTm1rzhHOc8
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+
+public class LoginController implements Initializable {
+	public LoginModel loginModel = new LoginModel();
+	
+	@FXML
+	private Label isConnected;
+	
+	
+	@Override
+	public void initialize (URL location, ResourceBundle resources){
+		if(loginModel.isDBConnected()){
+		isConnected.setText("Connected");
+		}
+		else {
+			isConnected.setText("Not Connected");
+		}
+	}
+	
+}

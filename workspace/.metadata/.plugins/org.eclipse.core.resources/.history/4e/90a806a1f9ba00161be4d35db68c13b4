@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="application.SampleController">
+
+      <Pane fx:id="LoginPage" layoutX="-31.0" layoutY="-183.0" prefHeight="500.0" prefWidth="750.0">
+         <children>
+            <Label fx:id="EmployeeNameLabel" layoutX="344.0" layoutY="250.0" text="Employe Name" />
+            <TextField fx:id="EmployeNameTextBox" layoutX="344.0" layoutY="273.0" />
+            <Label fx:id="PasswordLabel" layoutX="344.0" layoutY="307.0" prefHeight="17.0" prefWidth="113.0" text="Password" />
+            <TextField fx:id="PasswordTextBox" layoutX="344.0" layoutY="331.0" />
+         </children>
+      </Pane>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="74.0" layoutY="88.0" mnemonicParsing="false" text="Button" />
+         </children>
+      </Pane>
+   </center>
+
+</BorderPane>

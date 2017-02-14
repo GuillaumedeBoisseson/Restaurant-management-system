@@ -1,0 +1,91 @@
+package application;
+
+
+import java.io.IOException;
+import java.net.URL;
+import java.sql.SQLException;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.fxml.Initializable;
+
+
+public class SampleController implements Initializable {
+	
+	public void LoginPage(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Sample.fxml"));
+		Scene Sample = new Scene(root,750,500);
+		Sample.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(Sample);
+	}
+	
+	public void TablePage(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("TablePage.fxml"));
+		Scene TablePage = new Scene(root,750,500);
+		TablePage.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(TablePage);
+	}
+	
+	public void NewMenu(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("NewMenu.fxml"));
+		Scene NewMenu = new Scene(root,750,500);
+		NewMenu.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(NewMenu);
+	}
+	
+	public void CookPage(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("CookPage.fxml"));
+		Scene CookPage = new Scene(root,750,500);
+		CookPage.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(CookPage);
+	}
+	
+	//the three following classes, namely "LoginModel", " initialize", and "Login"  were found on a tutorial, retrieved on the 07/12/2016, available at: https://www.youtube.com/watch?v=nTm1rzhHOc8
+
+	public LoginModel LoginModel = new LoginModel();
+	
+	@FXML
+	private Label isConnected;
+	
+	@FXML
+	private TextField txtUsername;
+	
+	@FXML
+	private TextField txtPassword;
+	
+	
+	@Override
+	public void initialize (URL location, ResourceBundle resources){
+		if(LoginModel.isDBConnected()){
+			isConnected.setText("Connected to the server");
+		}
+		else {
+			isConnected.setText("Not Connected to the server");
+		}
+	}
+	
+	public void Login (ActionEvent event){
+		try {
+			if (LoginModel.isLogin(txtUsername.getText(), txtPassword.getText())){
+				isConnected.setText("Login Succesfull");
+			}
+			else {
+				isConnected.setText("Incorrect Username or Password");
+			}
+		}
+		catch (SQLException e){
+			e.printStackTrace();
+		}	
+		}
+		
+	}
+

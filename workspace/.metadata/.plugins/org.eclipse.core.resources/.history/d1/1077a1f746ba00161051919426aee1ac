@@ -1,0 +1,15 @@
+
+public class lesPetitsRigolos {
+
+	static String [] array = {"Clarisse", "Fred", "Guillaume", "Derick", "Grego"};
+	
+	
+	public static void main(String [] args){
+	
+		System.out.println("Les grands chenouilleurs sont: ");
+		for (int i=0; i<6; i++)
+		System.out.print(array);
+		
+	}
+	
+}

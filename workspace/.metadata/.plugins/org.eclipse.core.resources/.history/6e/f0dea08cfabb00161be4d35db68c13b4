@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" >
+   <children>
+      <Pane layoutX="-98.0" layoutY="-126.0" prefHeight="500.0" prefWidth="750.0">
+         <children>
+            <Label layoutX="123.0" layoutY="149.0" prefHeight="17.0" prefWidth="19.0" text="Hi," />
+            <Label layoutX="142.0" layoutY="149.0" text="Employe" />
+            <Label layoutX="197.0" layoutY="149.0" prefHeight="17.0" prefWidth="189.0" text="which table are you serving today?" />
+            <Button layoutX="375.0" layoutY="447.0" mnemonicParsing="false" text="Proceed to Order" />
+            <RadioButton layoutX="230.0" layoutY="275.0" mnemonicParsing="false" text="Table 1" />
+            <RadioButton layoutX="230.0" layoutY="315.0" mnemonicParsing="false" text="Table 5" />
+            <RadioButton layoutX="230.0" layoutY="356.0" mnemonicParsing="false" text="Table 9" />
+            <RadioButton layoutX="334.0" layoutY="275.0" mnemonicParsing="false" text="Table 2" />
+            <RadioButton layoutX="334.0" layoutY="315.0" mnemonicParsing="false" text="Table 6" />
+            <RadioButton layoutX="334.0" layoutY="356.0" mnemonicParsing="false" text="Table 10" />
+            <RadioButton layoutX="437.0" layoutY="275.0" mnemonicParsing="false" text="Table 3" />
+            <RadioButton layoutX="437.0" layoutY="315.0" mnemonicParsing="false" text="Table 7" />
+            <RadioButton layoutX="437.0" layoutY="356.0" mnemonicParsing="false" text="Table 11" />
+            <RadioButton layoutX="541.0" layoutY="275.0" mnemonicParsing="false" text="Table 4" />
+            <RadioButton layoutX="541.0" layoutY="315.0" mnemonicParsing="false" text="Table 8" />
+            <RadioButton layoutX="541.0" layoutY="356.0" mnemonicParsing="false" text="Table 12" />
+            <Button layoutX="450.0" layoutY="145.0" mnemonicParsing="false" text="Picking up Order" />
+            <Button layoutX="563.0" layoutY="145.0" mnemonicParsing="false" text="No Order ready " />
+            <Button layoutX="674.0" layoutY="145.0" mnemonicParsing="false" text="Log out" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

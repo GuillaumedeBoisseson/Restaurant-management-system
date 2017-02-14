@@ -1,0 +1,28 @@
+
+
+
+	class test {
+        int width;
+        int height;
+        int length;
+        int volume;
+        void finalize() {
+            volume = width*height*length;
+            System.out.println(volume);
+        }
+        protected void volume() {
+            volume = width*height*length;
+            System.out.println(volume);
+       } 
+    }    
+    class Output { 
+        public static void main(String args[])
+        {
+            test obj = new test();
+            obj.volume();
+        } 
+    }
+    
+    
+	
+

@@ -1,0 +1,35 @@
+package application;
+
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+
+public class SampleController {
+	
+	public void Login(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Sample.fxml"));
+		Scene Sample = new Scene(root,750,500);
+		Sample.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(Sample);
+	}
+	
+	public void TablePage(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("TablePage.fxml"));
+		Scene TablePage = new Scene(root,750,500);
+		TablePage.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(TablePage);
+	}
+	
+	public void NewMenu(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("NewMenu.fxml"));
+		Scene NewMenu = new Scene(root,750,500);
+		NewMenu.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(NewMenu);
+	}
+}

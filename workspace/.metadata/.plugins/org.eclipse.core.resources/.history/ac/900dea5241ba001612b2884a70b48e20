@@ -1,0 +1,15 @@
+import java.sql.Array;
+
+public class lesPetitsRigolos {
+
+	String [] array = {"Clarisse", "Fred", "Guillaume", "Derick", "Grego"};
+	
+	
+	public static void main(String [] args){
+	
+		for (int i=0; i<6; i++)
+		System.out.print(array[i]);
+		
+	}
+	
+}

@@ -1,0 +1,70 @@
+package application;
+
+import java.io.IOException;
+import java.net.URL;
+import java.sql.Connection;
+import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+
+public class SampleController implements Initializable {
+	
+	public void Login(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("Sample.fxml"));
+		Scene Sample = new Scene(root,750,500);
+		Sample.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(Sample);
+	}
+	
+	public void TablePage(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("TablePage.fxml"));
+		Scene TablePage = new Scene(root,750,500);
+		TablePage.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(TablePage);
+	}
+	
+	public void NewMenu(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("NewMenu.fxml"));
+		Scene NewMenu = new Scene(root,750,500);
+		NewMenu.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(NewMenu);
+	}
+	
+	public void CookPage(ActionEvent event) throws IOException{
+
+		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("CookPage.fxml"));
+		Scene CookPage = new Scene(root,750,500);
+		CookPage.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		Main.primaryStage.setScene(CookPage);
+	}
+	
+	public LoginModel loginModel = new LoginModel();
+	
+	@FXML
+	private Label isConnected;
+	
+	
+	@Override
+	public void initialize (URL location, ResourceBundle resources){
+		if(loginModel.isDBConnected()){
+			isConnected.setText("Connected");
+		}
+		else {
+			isConnected.setText("Not Connected");
+		}
+	}
+}

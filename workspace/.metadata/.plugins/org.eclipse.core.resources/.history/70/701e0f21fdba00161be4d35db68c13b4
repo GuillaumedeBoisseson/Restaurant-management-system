@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60">
+   <children>
+      <Pane layoutX="-99.0" layoutY="-137.0" prefHeight="500.0" prefWidth="750.0">
+         <children>
+            <Label layoutX="123.0" layoutY="155.0" text="What are they having?" />
+            <Button layoutX="445.0" layoutY="151.0" mnemonicParsing="false" text="Picking up order" />
+            <Button layoutX="558.0" layoutY="151.0" mnemonicParsing="false" text="No Order Ready" />
+            <Button layoutX="669.0" layoutY="151.0" mnemonicParsing="false" text="Log out" />
+            <Button layoutX="607.0" layoutY="461.0" mnemonicParsing="false" text="CANCEL" />
+            <Button layoutX="674.0" layoutY="461.0" mnemonicParsing="false" text="SUBMIT" />
+            <TextArea layoutX="526.0" layoutY="250.0" prefHeight="200.0" prefWidth="200.0" promptText="Special Requests" />
+            <Label layoutX="154.0" layoutY="224.0" text="Entree" />
+            <Label layoutX="157.0" layoutY="311.0" text="Main" />
+            <Label layoutX="150.0" layoutY="403.0" text="Dessert" />
+            <TextField alignment="CENTER" layoutX="245.0" layoutY="262.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <TextField alignment="CENTER" layoutX="322.0" layoutY="262.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <TextField alignment="CENTER" layoutX="403.0" layoutY="262.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <TextField alignment="CENTER" layoutX="243.0" layoutY="348.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <TextField alignment="CENTER" layoutX="320.0" layoutY="348.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <TextField alignment="CENTER" layoutX="401.0" layoutY="348.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <TextField alignment="CENTER" layoutX="241.0" layoutY="436.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <TextField alignment="CENTER" layoutX="318.0" layoutY="436.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <TextField alignment="CENTER" layoutX="399.0" layoutY="436.0" prefHeight="25.0" prefWidth="48.0" promptText="0" />
+            <Label layoutX="251.0" layoutY="224.0" text="Label" />
+            <Label layoutX="332.0" layoutY="224.0" text="Label" />
+            <Label layoutX="413.0" layoutY="224.0" text="Label" />
+            <Label layoutX="249.0" layoutY="320.0" text="Label" />
+            <Label layoutX="330.0" layoutY="320.0" text="Label" />
+            <Label layoutX="411.0" layoutY="320.0" text="Label" />
+            <Label layoutX="249.0" layoutY="412.0" text="Label" />
+            <Label layoutX="330.0" layoutY="412.0" text="Label" />
+            <Label layoutX="411.0" layoutY="412.0" text="Label" />
+            <Label layoutX="526.0" layoutY="224.0" prefHeight="17.0" prefWidth="102.0" text="Display Price here" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

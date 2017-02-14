@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Print {
+
+	public static void main (String[] args){
+		
+		int hello;
+		
+		Scanner Scanner = new Scanner(System.in);
+		hello = Scanner.nextInt();
+		
+		
+	for (int i=0; i< hello; i++) {
+		
+		System.out.print("Hello, world!");
+	}
+	}
+}
+	
+	

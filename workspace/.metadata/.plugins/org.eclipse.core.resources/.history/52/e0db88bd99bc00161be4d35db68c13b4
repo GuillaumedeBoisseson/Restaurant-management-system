@@ -1,0 +1,22 @@
+package application;
+import java.sql.*;
+
+//this code was found on a tutorial, retrieved on the 07/12/2016, available at: https://www.youtube.com/watch?v=nTm1rzhHOc8
+
+public class LoginModel {
+Connection connection;
+	
+	public LoginModel(){
+		connection = SQliteConnection.Connector();
+		if (connection == null) System.exit(1);
+	}
+	public boolean isDBConnected(){
+		try{
+			return !connection.isClosed();
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

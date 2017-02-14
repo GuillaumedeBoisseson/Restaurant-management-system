@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button layoutX="26.0" layoutY="14.0" mnemonicParsing="false" onAction="#AdminMenu" text="Back" />
+      <TableView fx:id="DataAnalysis" layoutX="5.0" layoutY="82.0" prefHeight="453.0" prefWidth="741.0">
+        <columns>
+            <TableColumn fx:id="Time" prefWidth="35.333343505859375" text="Time" />
+            <TableColumn fx:id="Date" prefWidth="34.33331298828125" text="Date" />
+          <TableColumn fx:id="DataTableNumber" prefWidth="46.66668701171875" text="TableNumber" />
+            <TableColumn fx:id="QuStarter1" prefWidth="54.0" text="Starter1" />
+            <TableColumn fx:id="QuStarter2" prefWidth="54.0" text="Starter2" />
+            <TableColumn fx:id="QuStarter3" prefWidth="51.0" text="Starter3" />
+            <TableColumn fx:id="QuMain1" prefWidth="46.0" text="Main1" />
+            <TableColumn fx:id="QuMain2" prefWidth="44.33331298828125" text="Main2" />
+            <TableColumn fx:id="QuMain3" prefWidth="41.33331298828125" text="Main3" />
+            <TableColumn fx:id="QuPudding1" prefWidth="59.66668701171875" text="Pudding1" />
+            <TableColumn fx:id="QuPudding2" prefWidth="62.0" text="Pudding2" />
+            <TableColumn fx:id="QuPudding3" prefWidth="61.0" text="Pudding3" />
+            <TableColumn fx:id="DataSpecialRequest" prefWidth="66.66668701171875" text="SpecialRequest" />
+            <TableColumn fx:id="DataEmployee" prefWidth="100.0" text="EmployeeName" />
+        </columns>
+      </TableView>
+      <Button layoutX="25.0" layoutY="541.0" mnemonicParsing="false" onAction="#loaddDatabaseOrders" text="Load Data" />
+      <Button fx:id="Import" layoutX="213.0" layoutY="541.0" mnemonicParsing="false" onAction="#Import" text="Import" />
+      <Button fx:id="Export" layoutX="279.0" layoutY="541.0" mnemonicParsing="false" onAction="#Export" text="Export" />
+      <TextField fx:id="searchBox" layoutX="109.0" layoutY="541.0" onInputMethodTextChanged="#searchUser" onKeyReleased="#searchUser" prefHeight="25.0" prefWidth="89.0" promptText="Search" />
+   </children>
+</AnchorPane>

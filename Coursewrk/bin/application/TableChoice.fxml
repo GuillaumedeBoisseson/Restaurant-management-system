@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label layoutX="338.0" layoutY="27.0" text="TABLES">
+         <font>
+            <Font name="Consolas" size="27.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efe5da" height="515.0" layoutX="9.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" width="733.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#57544f" height="63.0" layoutX="64.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" width="638.0" />
+      <Label layoutX="357.0" layoutY="126.0" text="Bar" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#57544f" height="119.0" layoutX="15.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Label layoutX="66.0" layoutY="242.0" text="TABLE 1" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="16.0" layoutY="279.0" mnemonicParsing="false" onAction="#Table1" prefHeight="25.0" prefWidth="203.0" text="Order new" />
+      <Button layoutX="16.0" layoutY="335.0" mnemonicParsing="false" onAction="#DeleteOrder1" prefHeight="25.0" prefWidth="203.0" text="Delete current order" />
+      <Button layoutX="16.0" layoutY="307.0" mnemonicParsing="false" onAction="#ChangeTable1Page" prefHeight="25.0" prefWidth="203.0" text="Modify Current Order" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Menu" text="Back" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#57544f" height="119.0" layoutX="268.0" layoutY="243.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Label layoutX="329.0" layoutY="244.0" text="TABLE 2" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="269.0" layoutY="279.0" mnemonicParsing="false" onAction="#Table2" prefHeight="25.0" prefWidth="203.0" text="Order new" />
+      <Button layoutX="269.0" layoutY="335.0" mnemonicParsing="false" onAction="#DeleteOrder2" prefHeight="25.0" prefWidth="203.0" text="Delete current order" />
+      <Button layoutX="269.0" layoutY="307.0" mnemonicParsing="false" onAction="#ChangeTable2Page" prefHeight="25.0" prefWidth="203.0" text="Modify Current Order" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#57544f" height="119.0" layoutX="524.0" layoutY="241.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Label layoutX="582.0" layoutY="241.0" text="TABLE 3" textFill="#fdfdfd">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="525.0" layoutY="277.0" mnemonicParsing="false" onAction="#Table3" prefHeight="25.0" prefWidth="203.0" text="Order new" />
+      <Button layoutX="525.0" layoutY="333.0" mnemonicParsing="false" onAction="#DeleteOrder3" prefHeight="25.0" prefWidth="203.0" text="Delete current order" />
+      <Button layoutX="525.0" layoutY="305.0" mnemonicParsing="false" onAction="#ChangeTable3Page" prefHeight="25.0" prefWidth="203.0" text="Modify Current Order" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#57544f" height="119.0" layoutX="12.0" layoutY="431.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Label layoutX="66.0" layoutY="431.0" text="TABLE 4" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="13.0" layoutY="467.0" mnemonicParsing="false" onAction="#Table4" prefHeight="25.0" prefWidth="203.0" text="Order new" />
+      <Button layoutX="13.0" layoutY="523.0" mnemonicParsing="false" onAction="#DeleteOrder4" prefHeight="25.0" prefWidth="203.0" text="Delete current order" />
+      <Button layoutX="12.0" layoutY="495.0" mnemonicParsing="false" onAction="#ChangeTable4Page" prefHeight="25.0" prefWidth="203.0" text="Modify Current Order" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#57544f" height="119.0" layoutX="277.0" layoutY="427.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Label layoutX="326.0" layoutY="431.0" text="TABLE 5" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="278.0" layoutY="463.0" mnemonicParsing="false" onAction="#Table5" prefHeight="25.0" prefWidth="203.0" text="Order new" />
+      <Button layoutX="278.0" layoutY="519.0" mnemonicParsing="false" onAction="#DeleteOrder5" prefHeight="25.0" prefWidth="203.0" text="Delete current order" />
+      <Button layoutX="278.0" layoutY="491.0" mnemonicParsing="false" onAction="#ChangeTable5Page" prefHeight="25.0" prefWidth="203.0" text="Modify Current Order" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#57544f" height="119.0" layoutX="528.0" layoutY="425.0" stroke="BLACK" strokeType="INSIDE" width="208.0" />
+      <Label layoutX="582.0" layoutY="431.0" text="TABLE 6" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="529.0" layoutY="461.0" mnemonicParsing="false" onAction="#Table6" prefHeight="25.0" prefWidth="203.0" text="Order new" />
+      <Button layoutX="529.0" layoutY="517.0" mnemonicParsing="false" onAction="#DeleteOrder6" prefHeight="25.0" prefWidth="203.0" text="Delete current order" />
+      <Button layoutX="529.0" layoutY="489.0" mnemonicParsing="false" onAction="#ChangeTable6Page" prefHeight="25.0" prefWidth="203.0" text="Modify Current Order" />
+      <Button fx:id="CreateNewOrder1" layoutX="73.0" layoutY="14.0" mnemonicParsing="false" onAction="#CookPage" text="Cook page" />
+   </children>
+</AnchorPane>

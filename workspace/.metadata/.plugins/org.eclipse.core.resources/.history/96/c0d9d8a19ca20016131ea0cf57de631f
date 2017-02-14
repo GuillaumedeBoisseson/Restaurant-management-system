@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class PascalTriangle {
+
+	int n;
+
+	
+	public static void main (String[] args){
+		
+		System.out.print("Input the numbers of rows that you want: ");
+		Scanner scanner = new Scanner (System.in);
+		int n = scanner.nextInt();
+		
+		
+		System.out.print("\n" + "You selected: " + n + "\n" );
+		
+		
+		
+		for (int i= 0; i<n; i++){
+			
+			for (int j= n- i; j>0; j--){ //space before each line character
+				System.out.print("!");
+			}
+			
+			for(int k = n- (-i) ; k < n; k++){
+				System.out.print("?");
+			}
+			
+		System.out.println();	
+		}
+		
+	}
+	
+}

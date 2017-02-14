@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="Table6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <VBox layoutX="176.0" layoutY="36.0" prefHeight="480.0" prefWidth="260.0">
+         <children>
+            <TextField fx:id="TableNumber" prefHeight="25.0" prefWidth="79.0" promptText="Table Number" text="6" />
+            <Label text="Starter 1:" />
+            <TextField fx:id="Starter1" prefHeight="25.0" prefWidth="79.0" promptText="Starter 1" />
+            <Label text="Starter 2:" />
+            <TextField fx:id="Starter2" prefHeight="25.0" prefWidth="79.0" />
+            <Label text="Starter 3:" />
+            <TextField fx:id="Starter3" prefHeight="25.0" prefWidth="79.0" />
+            <Label text="Main 1:" />
+            <TextField fx:id="Main1" prefHeight="25.0" prefWidth="79.0" />
+            <Label text="Main 2:" />
+            <TextField fx:id="Main2" prefHeight="25.0" prefWidth="79.0" />
+            <Label text="Main 3:" />
+            <TextField fx:id="Main3" prefHeight="25.0" prefWidth="79.0" />
+            <Label text="Pudding 1" />
+            <TextField fx:id="Pudding1" prefHeight="25.0" prefWidth="79.0" />
+            <Label text="Pudding 2:" />
+            <TextField fx:id="Pudding2" prefHeight="25.0" prefWidth="79.0" />
+            <Label text="Pudding 3:" />
+            <TextField fx:id="Pudding3" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="SpecialRequest" prefHeight="276.0" prefWidth="107.0" promptText="Special request" />
+            <Label text="Employee Name" />
+            <TextField fx:id="EmployeeName" prefHeight="25.0" prefWidth="79.0" promptText="Employee Name" />
+            <Button fx:id="Add" mnemonicParsing="false" onAction="#OrderTable6" prefHeight="35.0" prefWidth="107.0" text="Send to kitchen" />
+         </children>
+      </VBox>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Menu" prefHeight="25.0" prefWidth="48.0" text="Back" />
+   </children>
+</AnchorPane>
